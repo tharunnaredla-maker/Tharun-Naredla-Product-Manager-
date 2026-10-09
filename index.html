@@ -20,9 +20,19 @@
     @media(max-width:420px){.project{grid-template-columns:1fr 105px}.project-copy{padding:16px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
-  <style>.brand{font-size:clamp(1.7rem,3vw,2.35rem);line-height:1.1;letter-spacing:-.04em}.submit{opacity:1;cursor:pointer}.submit:hover{filter:brightness(1.06);transform:translateY(-1px)}</style>
+  <style>
+    .brand{font-size:clamp(1.7rem,3vw,2.35rem);line-height:1.1;letter-spacing:-.04em}.submit{opacity:1;cursor:pointer}.submit:hover{filter:brightness(1.06);transform:translateY(-1px)}
+    .intro-splash{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:var(--bg);pointer-events:none;animation:introFade .6s ease 1.2s forwards}
+    .intro-name{color:var(--ink);font-size:clamp(2rem,8vw,8.5rem);font-weight:850;letter-spacing:-.075em;white-space:nowrap;line-height:1;text-shadow:0 0 45px #7dd3fc35;animation:introPop .78s cubic-bezier(.2,.8,.2,1) both}
+    .intro-name::after{content:"";display:block;width:0;height:3px;margin:1.1rem auto 0;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--lime));animation:introLine .6s ease .35s forwards}
+    @keyframes introPop{from{opacity:0;transform:scale(.82);filter:blur(8px)}to{opacity:1;transform:scale(1);filter:blur(0)}}
+    @keyframes introLine{to{width:60%}}
+    @keyframes introFade{to{opacity:0;visibility:hidden}}
+    @media(prefers-reduced-motion:reduce){.intro-splash{animation-duration:.01ms;animation-delay:0s}.intro-name,.intro-name::after{animation-duration:.01ms;animation-delay:0s}}
+  </style>
 </head>
 <body>
+  <div class="intro-splash" aria-hidden="true"><div class="intro-name">Tharun Naredla</div></div>
   <header><div class="wrap nav"><div class="brand">Tharun Naredla</div><nav class="navlinks" aria-label="Main navigation"><a href="#expertise">Expertise</a><a href="#work">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></div></header>
   <main>
     <div class="wrap hero">
