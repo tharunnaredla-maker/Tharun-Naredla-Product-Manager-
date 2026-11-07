@@ -160,6 +160,8 @@ a.tag:hover{color:var(--fg);border-color:var(--accent);background:var(--glass-2)
 .ph{position:relative;margin:0;aspect-ratio:16/10;max-width:100%;border-bottom:1px solid var(--line);background:radial-gradient(120% 90% at 20% 0%,rgba(111,211,255,.10),transparent 60%),radial-gradient(90% 80% at 90% 100%,rgba(154,140,255,.12),transparent 60%),var(--bg-2);overflow:hidden;display:grid;place-items:center}
 .ph::after{content:attr(data-cap);position:absolute;left:14px;bottom:10px;right:14px;font:400 .66rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--fg-2)}
 .ph img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.ph.robotic-arm-ph{background:radial-gradient(ellipse at center,rgba(32,55,102,.42),rgba(4,5,12,.98))}
+.ph.robotic-arm-ph video{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:contain;background:#05070d}
 .proj:hover .ph img{transform:scale(1.05)}
 .ph .mark{position:relative;text-align:center;font:700 clamp(1.3rem,2.6vw,1.9rem)/1.2 var(--display);letter-spacing:.06em}
 .ph .mark i{display:block;font-style:normal;color:var(--accent)}
@@ -299,7 +301,7 @@ footer p{font:400 .72rem var(--mono);letter-spacing:.08em;color:var(--fg-2);text
       <div class="tags">
         <a class="tag" href="#experience">8 years · product development</a>
         <a class="tag" href="#expertise">Product strategy &amp; roadmap</a>
-        <a class="tag" href="#expertise">Robotics &amp; hardware</a>
+        <a class="tag" href="#work">6-axis robotic arm</a>
         <a class="tag" href="#expertise">3D printing</a>
         <a class="tag" href="#community">Consultant product designer</a>
         <a class="tag" href="#community">Startup mentor</a>
@@ -330,23 +332,23 @@ footer p{font:400 .72rem var(--mono);letter-spacing:.08em;color:var(--fg-2);text
       </article>
       <article class="glass acc-item rv">
         <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p2" id="b2"><h3>Design &amp; engineering</h3><span class="mono">Design</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
-        <div class="acc-p" id="p2" role="region" aria-labelledby="b2"><div><div class="acc-in"><p>Concept-to-production mechanical and electromechanical design, system architecture, CAD, design verification, tolerance and BOM optimization.</p><ul class="chips"><li>SolidWorks</li><li>Onshape</li><li>Fusion 360</li><li>DFM / DFA</li></ul></div></div></div>
+        <div class="acc-p" id="p2" role="region" aria-labelledby="b2"><div><div class="acc-in"><p>Concept-to-production mechanical and electromechanical design, system architecture, CAD, design verification, tolerance analysis and BOM optimization.</p><ul class="chips"><li>SolidWorks</li><li>Solid Edge</li><li>CATIA</li><li>Creo</li><li>Onshape</li><li>Fusion 360</li><li>DFMEA</li><li>DFM / DFA</li><li>GD&amp;T</li></ul></div></div></div>
       </article>
       <article class="glass acc-item rv">
         <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p3" id="b3"><h3>Prototyping &amp; validation</h3><span class="mono">Prototype</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
-        <div class="acc-p" id="p3" role="region" aria-labelledby="b3"><div><div class="acc-in"><p>Rapid prototype development, iterative testing, risk analysis and product validation for complex integrated systems.</p><ul class="chips"><li>FDM &amp; resin printing</li><li>DFMEA</li><li>Quality assurance</li><li>Testing</li></ul></div></div></div>
+        <div class="acc-p" id="p3" role="region" aria-labelledby="b3"><div><div class="acc-in"><p>Rapid prototyping, fabrication, iterative testing, risk analysis and product validation across integrated mechanical systems.</p><ul class="chips"><li>FDM &amp; resin printing</li><li>Sheet metal</li><li>Laser cutting</li><li>CNC bending</li><li>Welding</li><li>Vacuum casting</li><li>5-axis CNC · wood &amp; metal</li><li>DFMEA</li><li>Quality assurance</li><li>Testing</li></ul></div></div></div>
       </article>
       <article class="glass acc-item rv">
-        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p4" id="b4"><h3>Robotics &amp; mechatronics</h3><span class="mono">Automation</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
-        <div class="acc-p" id="p4" role="region" aria-labelledby="b4"><div><div class="acc-in"><p>Robotic mechanisms and electromechanical systems integrating mechanical, electrical and embedded engineering.</p><ul class="chips"><li>6-axis robotic arm</li><li>Agriculture rover</li><li>Motors &amp; actuators</li></ul></div></div></div>
+        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p4" id="b4"><h3>Robotics &amp; mechanisms</h3><span class="mono">Automation</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <div class="acc-p" id="p4" role="region" aria-labelledby="b4"><div><div class="acc-in"><p>Robotics middleware and connected-robot platforms for integrating, coordinating and managing robotic systems.</p><ul class="chips"><li>ROS</li><li>YARP</li><li>VIAM</li><li>LCM</li></ul></div></div></div>
       </article>
       <article class="glass acc-item rv">
         <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p5" id="b5"><h3>Embedded systems &amp; IoT</h3><span class="mono">Connected</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
-        <div class="acc-p" id="p5" role="region" aria-labelledby="b5"><div><div class="acc-in"><p>Connected hardware, embedded control and smart monitoring across sensors, actuators and wireless networks.</p><ul class="chips"><li>ESP32 / Arduino</li><li>LoRa / RF</li><li>Hardware–software integration</li></ul></div></div></div>
+        <div class="acc-p" id="p5" role="region" aria-labelledby="b5"><div><div class="acc-in"><p>Connected hardware, embedded control and smart monitoring across sensors, actuators and wireless networks.</p><ul class="chips"><li>Raspberry Pi</li><li>Orange Pi</li><li>Tibbo</li><li>Nuvoton</li><li>ESP32 / Arduino</li><li>LoRa / RF</li><li>Hardware–software integration</li></ul></div></div></div>
       </article>
       <article class="glass acc-item rv">
         <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p6" id="b6"><h3>Manufacturing readiness</h3><span class="mono">Delivery</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
-        <div class="acc-p" id="p6" role="region" aria-labelledby="b6"><div><div class="acc-in"><p>Manufacturing coordination, vendor management, technical documentation, cost and BOM optimization, and transition from prototype to production.</p><ul class="chips"><li>BOM</li><li>Production readiness</li><li>Vendor coordination</li></ul></div></div></div>
+        <div class="acc-p" id="p6" role="region" aria-labelledby="b6"><div><div class="acc-in"><p>Manufacturing handoff and launch support through clear technical deliverables, supplier coordination and production support.</p><ul class="chips"><li>BOM</li><li>3D models</li><li>Simulation reports</li><li>Production support</li><li>Vendor coordination</li></ul></div></div></div>
       </article>
     </div>
   </div>
@@ -356,8 +358,8 @@ footer p{font:400 .72rem var(--mono);letter-spacing:.08em;color:var(--fg-2);text
   <div class="wrap">
     <div class="sec-head">
       <p class="mono">Selected work</p>
-      <h2>Selected product work</h2>
-      <p>Product and project examples featured in my profile. Open each product site to learn more.</p>
+      <h2>Products and Projects Worked</h2>
+      <p>A selection of products and projects from concept through engineering, prototyping and delivery.</p>
     </div>
     <div class="pgrid">
       <article class="glass proj feat rv">
@@ -373,8 +375,8 @@ footer p{font:400 .72rem var(--mono);letter-spacing:.08em;color:var(--fg-2);text
         <div class="body"><p class="mono">NeoGreens · Growing systems</p><h3>NeoGreens plant &amp; equipment</h3><p class="d">Plant setup and machinery maintenance, along with a Smart Rack for microgreens and a humidity-and-temperature control device.</p><a class="link" href="https://neogreens.com/" target="_blank" rel="noopener">Visit NeoGreens ↗</a></div>
       </article>
       <article class="glass proj rv">
-        <figure class="ph" data-cap="Fig. Design to build to validate"><div class="mark">DESIGN<s>↓</s><i>BUILD</i><s>↓</s>VALIDATE</div></figure>
-        <div class="body"><p class="mono">Robotics · Automation</p><h3>Machines &amp; mechanisms</h3><p class="d">6-axis robotic arm, agriculture rover, smart dispensing and automated cooking systems, spanning mechanisms, controls and integration.</p><ul class="chips"><li>Mechanism development</li><li>Embedded control</li></ul></div>
+        <figure class="ph robotic-arm-ph"><video controls playsinline preload="metadata" poster="assets/robotic-arm-poster.jpg" aria-label="Video of the six-axis robotic arm prototype moving through a motion test"><source src="assets/robotic-arm.mp4" type="video/mp4">Your browser does not support embedded video.</video></figure>
+        <div class="body"><p class="mono">Robotics · Motion control</p><h3>6-axis robotic arm</h3><p class="d">A prototype articulated arm demonstrated in a programmed motion test. Related product work also spans an agriculture rover, smart dispensing and automated cooking systems.</p><ul class="chips"><li>Articulated mechanism</li><li>Prototype motion test</li><li>Robotics integration</li></ul></div>
       </article>
       <article class="glass proj rv">
         <figure class="ph" data-cap="Fig. Qzene platform"><div class="mark">QZENE<s>·</s><i>RECIPES</i><s>·</s>CLOUD</div></figure>
@@ -549,13 +551,49 @@ footer p{font:400 .72rem var(--mono);letter-spacing:.08em;color:var(--fg-2);text
     })(t0);
   }
 
-  /* ---------- starfield ---------- */
+  /* ---------- animated galaxy backdrop ---------- */
   var sky = document.getElementById('sky'), sctx = sky.getContext('2d'), SW, SH, sstars = [], px = 0, py = 0, tx = 0, ty = 0;
   function skySize(){
     SW = sky.width = innerWidth*dpr; SH = sky.height = innerHeight*dpr;
     var n = Math.round(Math.min(220, innerWidth*innerHeight/7000));
     sstars = [];
     for (var i=0;i<n;i++) sstars.push({x:Math.random()*SW, y:Math.random()*SH, r:(Math.random()*1.3+.3)*dpr, l:Math.random()*.9+.1, p:Math.random()*6.28, s:Math.random()*1.6+.4, hue:Math.random()<.2?'154,140,255':'190,225,255'});
+  }
+  function drawPlanet(x,y,r,base,light,ring){
+    sctx.save();
+    if (ring){
+      sctx.translate(x,y); sctx.rotate(-.24);
+      sctx.beginPath(); sctx.ellipse(0,0,r*1.85,r*.62,0,0,Math.PI*2);
+      sctx.strokeStyle='rgba(169,190,255,.18)'; sctx.lineWidth=Math.max(1,2*dpr); sctx.stroke();
+      sctx.beginPath(); sctx.ellipse(0,0,r*1.58,r*.48,0,Math.PI*.08,Math.PI*.9);
+      sctx.strokeStyle='rgba(111,211,255,.32)'; sctx.lineWidth=Math.max(1,2.4*dpr); sctx.stroke();
+      sctx.rotate(.24); sctx.translate(-x,-y);
+    }
+    var grad=sctx.createRadialGradient(x-r*.38,y-r*.38,r*.05,x,y,r*1.15);
+    grad.addColorStop(0,light); grad.addColorStop(.42,base); grad.addColorStop(1,'rgba(5,8,25,.78)');
+    sctx.fillStyle=grad; sctx.beginPath(); sctx.arc(x,y,r,0,Math.PI*2); sctx.fill();
+    sctx.strokeStyle='rgba(205,225,255,.22)'; sctx.lineWidth=Math.max(1,dpr); sctx.stroke();
+    sctx.restore();
+  }
+  function drawSatellite(x,y,rx,ry,angle){
+    sctx.save(); sctx.translate(x,y); sctx.rotate(-.22);
+    sctx.beginPath(); sctx.ellipse(0,0,rx,ry,0,0,Math.PI*2);
+    sctx.strokeStyle='rgba(152,177,255,.12)'; sctx.lineWidth=dpr; sctx.stroke();
+    var sx=Math.cos(angle)*rx, sy=Math.sin(angle)*ry;
+    sctx.fillStyle='rgba(220,239,255,.82)'; sctx.shadowColor='rgba(111,211,255,.9)'; sctx.shadowBlur=7*dpr;
+    sctx.beginPath(); sctx.arc(sx,sy,2*dpr,0,Math.PI*2); sctx.fill(); sctx.restore();
+  }
+  function drawComet(t,offset,period,yBase,reverse){
+    var phase=((t+offset)%period)/period;
+    if(phase>.19) return;
+    var p=phase/.19, dir=reverse?-1:1, x=(reverse?1.14:-.14)+dir*p*1.28;
+    var y=yBase + Math.sin(p*Math.PI*2)*.11;
+    var cx=x*SW, cy=y*SH, tail= Math.min(SW,SH)*.12;
+    var grad=sctx.createLinearGradient(cx-dir*tail,cy+tail*.25,cx,cy);
+    grad.addColorStop(0,'rgba(154,140,255,0)'); grad.addColorStop(1,'rgba(190,230,255,.72)');
+    sctx.save(); sctx.strokeStyle=grad; sctx.lineWidth=1.5*dpr; sctx.shadowColor='rgba(111,211,255,.6)'; sctx.shadowBlur=8*dpr;
+    sctx.beginPath(); sctx.moveTo(cx-dir*tail,cy+tail*.25); sctx.lineTo(cx,cy); sctx.stroke();
+    sctx.fillStyle='rgba(235,248,255,.95)'; sctx.beginPath(); sctx.arc(cx,cy,2.1*dpr,0,Math.PI*2); sctx.fill(); sctx.restore();
   }
   function drawSky(t){
     sctx.clearRect(0,0,SW,SH);
@@ -575,6 +613,17 @@ footer p{font:400 .72rem var(--mono);letter-spacing:.08em;color:var(--fg-2);text
       sctx.fillStyle = 'rgba(' + s.hue + ',' + a.toFixed(3) + ')';
       sctx.beginPath(); sctx.arc(x,y,s.r,0,6.283); sctx.fill();
     }
+    var unit=Math.min(SW,SH), drift=Math.sin(t*.000035);
+    var p1x=SW*(.82+drift*.018), p1y=SH*(.24+Math.cos(t*.00004)*.018), p1r=unit*.028;
+    drawPlanet(p1x,p1y,p1r,'rgba(104,105,187,.58)','rgba(172,180,255,.66)',true);
+    drawSatellite(p1x,p1y,p1r*2.35,p1r*.82,t*.00018);
+    var p2x=SW*(.13+Math.sin(t*.000026+1)*.014), p2y=SH*(.72+Math.cos(t*.00003+1)*.018), p2r=unit*.017;
+    drawPlanet(p2x,p2y,p2r,'rgba(53,128,155,.5)','rgba(117,220,228,.63)',false);
+    drawSatellite(p2x,p2y,p2r*2.6,p2r*1.2,-t*.00024+1.4);
+    var p3x=SW*(.53+Math.cos(t*.00002)*.012), p3y=SH*(.48+Math.sin(t*.000025)*.014), p3r=unit*.009;
+    drawPlanet(p3x,p3y,p3r,'rgba(158,104,104,.43)','rgba(255,181,154,.56)',false);
+    drawComet(t,0,18000,.12,false);
+    drawComet(t,8200,22000,.60,true);
   }
   skySize(); addEventListener('resize', skySize);
   if (reduce){ drawSky(0); }
