@@ -1,115 +1,671 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1220">
-  <meta name="description" content="Tharun Naredla — Product Manager and Product & Innovation Engineer with 8 years of product development across robotics, connected hardware and AI-enabled products.">
-  <title>Tharun Naredla | Product Manager &amp; Innovation Engineer</title>
-  <style>
-    :root{--ink:#e9eef8;--muted:#a4b2c9;--bg:#0b1220;--panel:#121d30;--line:#24344d;--accent:#7dd3fc;--lime:#c4f17b;--max:1120px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#182b47 0,transparent 42%),var(--bg);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-    header{padding:18px 0;border-bottom:1px solid #ffffff12;position:sticky;top:0;z-index:10;background:#0b1220eF;backdrop-filter:blur(14px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:1.18rem;font-weight:800;letter-spacing:.06em}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.9rem}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--ink)}
-    .hero{padding:75px 0 62px;display:grid;grid-template-columns:1.4fr .65fr;gap:50px;align-items:center}.eyebrow{color:var(--lime);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:750}.hero h1{font-size:clamp(2.7rem,6vw,5.2rem);line-height:1.02;letter-spacing:-.055em;margin:16px 0 20px}.hero h1 span{color:var(--accent)}.lead{font-size:1.12rem;color:#c2cee0;max-width:740px}.pills{display:flex;flex-wrap:wrap;gap:9px;margin:25px 0 30px}.pill{border:1px solid #ffffff20;color:#d6e0ef;border-radius:100px;padding:7px 12px;font-size:.82rem}.cta{display:inline-flex;align-items:center;gap:9px;padding:12px 18px;border-radius:10px;background:var(--accent);color:#07121f;text-decoration:none;font-weight:750}.portrait-frame{position:relative;border:1px solid #ffffff24;border-radius:24px;padding:9px;background:linear-gradient(145deg,#1b3150,#101a2a);box-shadow:0 24px 70px #0006;transform:rotate(1.5deg)}.portrait-frame img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 36%;border-radius:17px}.portrait-label{position:absolute;bottom:18px;left:18px;padding:9px 13px;border-radius:10px;background:#0b1220df;border:1px solid #ffffff20;font-size:.8rem}
-    section{padding:48px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:25px}.section-head h2{font-size:clamp(1.7rem,3vw,2.35rem);line-height:1.1;letter-spacing:-.04em;margin:0}.section-head p{color:var(--muted);max-width:520px;margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(155deg,#142137,#101928);border:1px solid var(--line);border-radius:16px;padding:22px}.card .number{font-size:.78rem;color:var(--accent);letter-spacing:.1em;font-weight:800}.card h3{font-size:1.15rem;margin:9px 0}.card p{color:var(--muted);font-size:.93rem;margin:0}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.tag{font-size:.74rem;color:#c7d5e8;background:#ffffff0b;border:1px solid #ffffff12;padding:4px 8px;border-radius:7px}
-    .flow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:center}.step{min-height:72px;display:grid;place-items:center;text-align:center;padding:10px 6px;border-radius:11px;border:1px solid var(--line);background:#111c2c;font-size:.78rem;font-weight:750}.arrow{color:var(--accent);text-align:center}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{overflow:hidden;border:1px solid var(--line);background:linear-gradient(150deg,#142137,#101928);border-radius:16px;display:grid;grid-template-columns:1fr 190px;min-height:210px;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;animation:fadeUp .55s ease-out both}.project:hover{transform:translateY(-4px);border-color:#45617d;box-shadow:0 14px 34px #0003}.project-copy{padding:22px;align-self:center}.project h3{margin:0 0 8px}.project p{color:var(--muted);font-size:.9rem;margin:0 0 13px}.project img{width:100%;height:100%;min-height:210px;object-fit:contain;background:#f5f6f7;padding:12px}.project img.photo{object-fit:contain;background:#111c2c;padding:7px}.project.wide{grid-column:1/-1;display:flex;flex-direction:column;min-height:0;background:#080a0d}.project.wide img.banner{width:100%;height:auto;min-height:0;max-height:380px;aspect-ratio:2732/842;object-fit:contain;background:#050505;padding:0 2%}.project.wide .project-copy{display:flex;align-items:center;justify-content:space-between;gap:22px}.project-placeholder{min-height:210px;display:grid;place-items:center;text-align:center;color:var(--lime);font-weight:800;letter-spacing:.17em;line-height:1.9;background:radial-gradient(circle at 50% 45%,#244568,#111c2c 72%);border-left:1px solid var(--line)}.textlink{color:var(--accent);font-size:.87rem;font-weight:700;text-decoration:none}.textlink:hover{text-decoration:underline}.brand{font-size:1.18rem}.hero>div:first-child,.portrait-frame{animation:fadeUp .72s ease-out both}.portrait-frame{animation-delay:.1s;transition:transform .25s ease,box-shadow .25s ease}.portrait-frame:hover{transform:translateY(-4px) rotate(0);box-shadow:0 30px 80px #0007}.card,.role{transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;animation:fadeUp .55s ease-out both}.card:hover,.role:hover{transform:translateY(-3px);border-color:#45617d;box-shadow:0 12px 28px #0003}@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){.brand,.hero>div:first-child,.portrait-frame,.card,.project,.role{animation:none!important;transition:none!important}}
-    .timeline{display:grid;gap:12px}.role{display:grid;grid-template-columns:205px 1fr;gap:22px;padding:20px 22px;border:1px solid var(--line);background:#111c2c;border-radius:14px}.role-date{font-size:.86rem;color:var(--accent);font-weight:700}.role h3{margin:0;font-size:1.05rem}.role .company{color:var(--muted);font-size:.88rem;margin:2px 0 8px}.role p{margin:0;color:#c5d2e4;font-size:.91rem}.role ul{margin:9px 0 0;padding-left:18px;color:#bdcbe0;font-size:.87rem;columns:2}.role li{break-inside:avoid;margin-bottom:3px}.position{padding:28px;border:1px solid #3d5770;background:linear-gradient(115deg,#172b3c,#111b2c);border-radius:18px}.position h3{font-size:1.3rem;margin:0 0 10px}.position p{margin:0;color:#c5d2e4}.position b{color:var(--accent)}
-    .contact{border:1px solid #31506b;background:radial-gradient(ellipse at 100% 0%,#1a3851,#121d30 62%);border-radius:20px;padding:30px}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px}.contact h2{font-size:2rem;line-height:1.1;margin:5px 0 12px}.contact-copy p{color:var(--muted)}.social{display:inline-flex;margin-top:10px;padding:10px 14px;border:1px solid #ffffff28;border-radius:9px;text-decoration:none;color:var(--accent);font-weight:700}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:.82rem;color:#d9e5f4;font-weight:650}.field input,.field textarea{width:100%;font:inherit;font-size:.93rem;padding:11px 12px;color:var(--ink);background:#0b1423;border:1px solid #344760;border-radius:9px}.field textarea{min-height:118px;resize:vertical}.field input:focus,.field textarea:focus{outline:2px solid var(--accent);outline-offset:1px}.form-note{font-size:.8rem;color:var(--muted);margin:10px 0}.submit{padding:12px 16px;background:var(--accent);color:#08131f;border:0;border-radius:9px;font:inherit;font-weight:750;opacity:.62;cursor:not-allowed}.pending{font-size:.8rem;color:var(--lime);margin-left:10px}footer{padding:28px 0 42px;border-top:1px solid #ffffff12;color:var(--muted);font-size:.84rem;margin-top:35px;display:flex;justify-content:space-between;gap:20px}
-    @media(max-width:850px){.hero{grid-template-columns:1fr .65fr;gap:28px;padding:60px 0 45px}.grid{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(4,1fr)}.arrow{display:none}.role{grid-template-columns:160px 1fr}.project{grid-template-columns:1fr 150px}.contact-grid{gap:24px}}
-    @media(max-width:620px){.wrap{width:min(100% - 28px,var(--max))}.navlinks{display:none}.hero{grid-template-columns:1fr;padding:52px 0 36px}.portrait-frame{width:min(78%,330px);margin:0 auto}.grid,.projects,.contact-grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}.flow{grid-template-columns:repeat(2,1fr)}.project{grid-template-columns:1fr 125px;min-height:170px}.project img{min-height:170px}.project.wide .project-copy{display:block}.project.wide img.banner{max-height:260px;padding:0}.role{grid-template-columns:1fr;gap:4px}.role ul{columns:1}.contact{padding:22px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}footer{display:block}footer span{display:block;margin-top:7px}}
-    @media(max-width:420px){.project{grid-template-columns:1fr 105px}.project-copy{padding:16px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  </style>
-  <style>
-    :root{--ink:#f2f6ff;--muted:#afbdd5;--bg:#090f1d;--panel:#131e32;--line:#2b425d;--accent:#5de4d0;--lime:#ffd27c;--warm:#ff9675}
-    body{background:radial-gradient(ellipse at 78% 0%,#8375ff25 0,transparent 38%),radial-gradient(ellipse at 4% 54%,#5de4d012 0,transparent 34%),var(--bg)}
-    .brand{font-size:clamp(1.7rem,3vw,2.35rem);line-height:1.1;letter-spacing:-.04em}.submit{opacity:1;cursor:pointer}.submit:hover{filter:brightness(1.06);transform:translateY(-1px)}
-    .education-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.milestone-image{display:block;width:100%;height:175px;object-fit:cover;object-position:center;border-radius:11px;margin:0 0 14px}.community-card{padding:18px}
-    .hero{position:relative;isolation:isolate}.hero::before{content:"";position:absolute;z-index:-1;right:-10%;top:-8%;width:clamp(250px,42vw,590px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 35%,#7778ff38,#5de4d014 48%,transparent 74%);filter:blur(8px);animation:glowFloat 8s ease-in-out infinite alternate}.hero::after{content:"";position:absolute;z-index:-1;right:1%;top:12%;width:clamp(175px,26vw,365px);aspect-ratio:1;border:1px solid #5de4d037;border-radius:50%;box-shadow:0 0 0 22px #5de4d00c,0 0 0 54px #8375ff0a;animation:ringBreathe 9s ease-in-out infinite}
-    .section-head h2::after{content:"";display:block;width:48px;height:3px;margin-top:10px;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--warm))}.card,.project,.role{border-color:#2b425d}.project-placeholder{background:radial-gradient(circle at 35% 35%,#3a4272,#143044 65%,#101826)}
-    .project:not(.wide) img{transition:transform .45s cubic-bezier(.2,.75,.2,1)}.project:not(.wide):hover img{transform:scale(1.035)}.pill{transition:transform .2s ease,border-color .2s ease}.pill:hover{transform:translateY(-2px);border-color:var(--accent)}.cta{transition:transform .22s ease,box-shadow .22s ease}.cta:hover{transform:translateY(-3px);box-shadow:0 10px 28px #5de4d044}.social{transition:background .2s ease,border-color .2s ease}.social:hover{background:#5de4d012;border-color:#5de4d066}
-    @keyframes glowFloat{from{transform:translate3d(0,0,0) scale(.94);opacity:.62}to{transform:translate3d(-14px,12px,0) scale(1.04);opacity:.92}}@keyframes ringBreathe{0%,100%{transform:scale(.96);opacity:.45}50%{transform:scale(1.04);opacity:.8}}
-    @media(max-width:620px){.education-grid{grid-template-columns:1fr}}
-    @media(prefers-reduced-motion:reduce){.hero::before,.hero::after{animation:none!important}.project:not(.wide) img,.cta,.pill,.social{transition:none!important}}
-    .intro-splash{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:var(--bg);pointer-events:none;animation:introFade .6s ease 1.2s forwards}
-    .intro-name{color:var(--ink);font-size:clamp(2rem,8vw,8.5rem);font-weight:850;letter-spacing:-.075em;white-space:nowrap;line-height:1;text-shadow:0 0 45px #7dd3fc35;animation:introPop .78s cubic-bezier(.2,.8,.2,1) both}
-    .intro-name::after{content:"";display:block;width:0;height:3px;margin:1.1rem auto 0;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--lime));animation:introLine .6s ease .35s forwards}
-    @keyframes introPop{from{opacity:0;transform:scale(.82);filter:blur(8px)}to{opacity:1;transform:scale(1);filter:blur(0)}}
-    @keyframes introLine{to{width:60%}}
-    @keyframes introFade{to{opacity:0;visibility:hidden}}
-    @media(prefers-reduced-motion:reduce){.intro-splash{animation-duration:.01ms;animation-delay:0s}.intro-name,.intro-name::after{animation-duration:.01ms;animation-delay:0s}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tharun Naredla</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Tharun Naredla, Product Manager and Product & Innovation Engineer with 8 years of product development across robotics, connected hardware and AI-enabled products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<script>try{if(!sessionStorage.getItem('tn-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro-on')}catch(e){}</script>
+<style>
+/* Layout concept: a flight through deep space. A hyperspace-jump boot intro opens onto a starfield page; a portrait sits inside an orbiting ring, services open like hatches, experience runs down a vertical flight log. Single dark theme by design. */
+:root{
+  --bg:#04050c; --bg-2:#0a0d1a; --glass:rgba(255,255,255,.04); --glass-2:rgba(255,255,255,.075);
+  --line:rgba(160,190,255,.14); --line-2:rgba(160,190,255,.30);
+  --fg:#eaf0ff; --fg-2:#9aa6c6;
+  --accent:#6fd3ff; --accent-2:#9a8cff; --accent-ink:#04121c; --ok:#7dffb3;
+  --glow:rgba(111,211,255,.16);
+  --display:"Chakra Petch",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{position:relative;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+#sky{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.page{position:relative;z-index:1}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+::selection{background:var(--accent);color:var(--accent-ink)}
+.wrap{width:100%;max-width:1160px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-2)}
+section{scroll-margin-top:84px}
+
+/* intro */
+#intro{display:none;position:fixed;inset:0;z-index:100;background:#000;animation:introOut .6s 7s forwards}
+.intro-on #intro{display:block}
+#intro.out{opacity:0;visibility:hidden;transition:opacity .7s ease,visibility 0s .7s}
+#intro canvas{position:absolute;inset:0;width:100%;height:100%}
+.boot{position:absolute;left:max(24px,env(safe-area-inset-left,0px));bottom:max(40px,calc(env(safe-area-inset-bottom,0px) + 24px));display:grid;gap:8px;font:400 .85rem var(--mono);color:var(--accent);letter-spacing:.04em}
+.boot p{opacity:0;transform:translateX(-8px);animation:bootIn .45s var(--ease) forwards}
+.boot p.ok{color:var(--ok)}
+@keyframes bootIn{to{opacity:1;transform:none}}
+#skip{position:absolute;right:max(20px,env(safe-area-inset-right,0px));top:max(20px,calc(env(safe-area-inset-top,0px) + 12px));padding:8px 14px;background:transparent;color:var(--fg-2);border:1px solid var(--line-2);font:400 .72rem var(--mono);letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+#skip:hover{color:var(--fg);border-color:var(--accent)}
+.flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+@keyframes introOut{to{opacity:0;visibility:hidden}}
+
+/* nav */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;padding-top:12px}
+.pill{display:flex;align-items:center;justify-content:space-between;gap:16px;height:54px;padding:0 10px 0 12px;border:1px solid var(--line);border-radius:999px;background:rgba(8,11,24,.62);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:10px;font:600 .98rem var(--display);letter-spacing:.02em;white-space:nowrap}
+.brand b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:linear-gradient(140deg,var(--accent),var(--accent-2));color:var(--accent-ink);font:700 .78rem var(--display)}
+.nav{display:flex;align-items:center;gap:4px;font-size:.88rem;color:var(--fg-2)}
+.nav a{padding:8px 13px;border-radius:999px;transition:background .2s,color .2s}
+.nav a:hover,.nav a[aria-current="true"]{background:var(--glass-2);color:var(--fg)}
+.nav a.keep{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.nav a.keep:hover{background:var(--fg);color:var(--bg)}
+.progress{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);height:2px;z-index:55;background:linear-gradient(90deg,var(--accent),var(--accent-2));transform:scaleX(0);transform-origin:0 50%}
+@media (max-width:860px){.nav a:not(.keep){display:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;border:1px solid var(--line-2);font:600 .92rem var(--body);color:var(--fg);background:var(--glass);cursor:pointer;transition:transform .25s var(--ease),background .2s,border-color .2s,color .2s}
+.btn:hover{border-color:var(--accent);transform:translateY(-2px)}
+.btn.primary{background:linear-gradient(120deg,var(--accent),#a6e6ff);border-color:transparent;color:var(--accent-ink)}
+.btn.primary:hover{background:var(--fg);color:var(--bg)}
+.link{display:inline-flex;gap:6px;font:500 .88rem var(--mono);color:var(--accent);transition:gap .25s var(--ease),color .2s}
+.link:hover{gap:10px;color:var(--fg)}
+
+/* hero */
+.hero{padding-block:clamp(40px,7vw,96px) clamp(48px,7vw,96px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,72px);align-items:center}
+.hello{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px}
+.hello::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 12px var(--ok);animation:blink 2.2s infinite}
+@keyframes blink{50%{opacity:.35}}
+h1{font-weight:700;font-size:clamp(2.7rem,7.4vw,5.6rem);line-height:.98;letter-spacing:-.02em}
+h1 .nm{display:block;background:linear-gradient(100deg,var(--fg) 20%,var(--accent) 70%,var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent;animation:rise .9s var(--ease) both}
+h1 .nm:nth-child(2){animation-delay:.1s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+.role{margin-top:20px;display:grid;gap:2px;font-family:var(--display);animation:rise .9s .22s var(--ease) both}
+.role strong{font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:600;color:var(--accent)}
+.role span{font-size:clamp(1rem,1.8vw,1.2rem);color:var(--fg-2)}
+.lede{margin-top:22px;max-width:36rem;color:var(--fg-2);font-size:1.08rem;animation:rise .9s .34s var(--ease) both}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;animation:rise .9s .46s var(--ease) both}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px;animation:rise .9s .58s var(--ease) both}
+.tag{padding:7px 14px;border:1px solid var(--line-2);border-radius:999px;background:var(--glass);font:400 .78rem var(--mono);letter-spacing:.03em;color:var(--fg-2);transition:color .2s,border-color .2s,background .2s,transform .25s var(--ease)}
+a.tag:hover{color:var(--fg);border-color:var(--accent);background:var(--glass-2);transform:translateY(-2px)}
+
+.orb{position:relative;width:min(100%,380px);aspect-ratio:1;margin-inline:auto;display:grid;place-items:center;animation:rise 1.1s .25s var(--ease) both}
+.orb::before{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,transparent 0 55%,var(--accent) 80%,var(--accent-2) 95%,transparent);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));animation:spin 9s linear infinite}
+.orb::after{content:"";position:absolute;inset:-8%;border-radius:50%;background:radial-gradient(closest-side,var(--glow),transparent 70%);z-index:-1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.portrait{position:relative;width:88%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:1px solid var(--line-2);background:radial-gradient(circle at 35% 30%,#17213f,var(--bg-2));display:grid;place-items:center;font:700 clamp(3rem,9vw,5rem) var(--display);color:var(--accent);letter-spacing:.04em}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.chip{position:absolute;padding:7px 12px;border:1px solid var(--line-2);border-radius:999px;background:rgba(8,11,24,.75);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:500 .72rem var(--mono);letter-spacing:.06em;color:var(--fg);white-space:nowrap;animation:float 6s ease-in-out infinite}
+.chip b{color:var(--accent);font-weight:500}
+.chip.c1{top:6%;right:-2%}
+.chip.c2{bottom:14%;left:-4%;animation-delay:-2s}
+.chip.c3{bottom:-2%;right:12%;animation-delay:-4s}
+@keyframes float{50%{transform:translateY(-9px)}}
+@media (max-width:900px){.hero-grid{grid-template-columns:minmax(0,1fr)}.orb{width:min(78%,320px)}.chip.c1{right:-6%}.chip.c2{left:-6%}}
+
+/* sections */
+.sec{padding-block:clamp(56px,8vw,104px)}
+.sec-head{max-width:46rem;margin-bottom:clamp(28px,4vw,48px)}
+.sec-head .mono{display:inline-flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--accent)}
+.sec-head .mono::before{content:"";width:22px;height:1px;background:var(--accent)}
+.sec-head h2{font-size:clamp(2rem,4.6vw,3.2rem);font-weight:700;line-height:1.05;letter-spacing:-.01em}
+.sec-head p{margin-top:12px;color:var(--fg-2)}
+
+.rv{transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+.rv.pre{opacity:.3;transform:translateY(18px)}
+
+.glass{position:relative;border:1px solid var(--line);border-radius:18px;background:var(--glass);overflow:hidden;transition:border-color .3s,transform .35s var(--ease)}
+.glass::before{content:"";position:absolute;inset:0;background:radial-gradient(300px circle at var(--mx,50%) var(--my,0%),var(--glow),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.glass:hover{border-color:var(--line-2)}
+.glass:hover::before{opacity:1}
+.glass>*{position:relative}
+
+/* services: accordion */
+.acc{display:grid;gap:12px}
+.acc-item{padding:0}
+.acc-item.open{border-color:var(--line-2)}
+.acc-btn{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:center;padding:22px 26px;background:none;border:0;color:inherit;text-align:left;cursor:pointer;font:inherit}
+.acc-btn h3{font-size:clamp(1.15rem,2.3vw,1.5rem);font-weight:600;line-height:1.2}
+.acc-btn .mono{grid-column:1}
+.acc-btn .chev{grid-column:2;grid-row:1/3;width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line-2);border-radius:50%;transition:transform .4s var(--ease),background .2s,border-color .2s}
+.acc-item.open .chev{transform:rotate(180deg);background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.acc-btn:hover .chev{border-color:var(--accent)}
+.acc-p{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+.acc-item.open .acc-p{grid-template-rows:1fr}
+.acc-p>div{overflow:hidden;min-height:0}
+.acc-in{padding:0 26px 26px;display:grid;gap:16px;max-width:52rem}
+.acc-in p{color:var(--fg-2)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips li{padding:5px 12px;border:1px solid var(--line-2);border-radius:999px;font:400 .72rem var(--mono);letter-spacing:.03em;color:var(--fg-2)}
+
+/* projects */
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.proj{display:flex;flex-direction:column;min-width:0}
+.proj:hover{transform:translateY(-6px)}
+.proj .body{display:flex;flex-direction:column;gap:12px;padding:22px 22px 24px;flex:1}
+.proj h3{font-size:1.4rem;font-weight:600;line-height:1.15}
+.proj p.d{color:var(--fg-2);font-size:.97rem}
+.proj .chips{margin-top:2px}
+.proj .link{margin-top:auto;padding-top:6px}
+.proj.feat{grid-column:1/-1;flex-direction:row}
+.proj.feat .ph{flex:1.1;aspect-ratio:auto;min-height:300px;border-bottom:0;border-right:1px solid var(--line)}
+.proj.feat .body{flex:1;justify-content:center;padding:34px}
+.proj.feat h3{font-size:clamp(1.8rem,3.4vw,2.6rem)}
+.ph{position:relative;margin:0;aspect-ratio:16/10;max-width:100%;border-bottom:1px solid var(--line);background:radial-gradient(120% 90% at 20% 0%,rgba(111,211,255,.10),transparent 60%),radial-gradient(90% 80% at 90% 100%,rgba(154,140,255,.12),transparent 60%),var(--bg-2);overflow:hidden;display:grid;place-items:center}
+.ph::after{content:attr(data-cap);position:absolute;left:14px;bottom:10px;right:14px;font:400 .66rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--fg-2)}
+.ph img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.proj:hover .ph img{transform:scale(1.05)}
+.ph .mark{position:relative;text-align:center;font:700 clamp(1.3rem,2.6vw,1.9rem)/1.2 var(--display);letter-spacing:.06em}
+.ph .mark i{display:block;font-style:normal;color:var(--accent)}
+.ph .mark s{display:block;text-decoration:none;font:400 .8rem var(--mono);color:var(--fg-2);margin-block:2px}
+@media (max-width:980px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.proj.feat{flex-direction:column}.proj.feat .ph{flex:none;aspect-ratio:16/10;min-height:0;border-right:0;border-bottom:1px solid var(--line)}.proj.feat .body{padding:24px}}
+@media (max-width:620px){.pgrid{grid-template-columns:minmax(0,1fr)}}
+
+/* route (process) */
+.route{position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;padding-top:6px}
+.route .line{position:absolute;left:8px;right:8px;top:14px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--accent),var(--accent-2));transform-origin:0 50%;transition:transform 1.8s var(--ease)}
+.route.pre .line{transform:scaleX(0)}
+.route .ship{position:absolute;top:9px;left:8px;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 14px 4px var(--accent);animation:travel 6s 1.2s var(--ease) infinite}
+@keyframes travel{0%{left:8px;opacity:0}8%{opacity:1}92%{opacity:1}100%{left:calc(100% - 20px);opacity:0}}
+.route li{position:relative;padding-top:42px;font:600 .88rem var(--display);letter-spacing:.14em;text-transform:uppercase;transition:opacity .5s calc(var(--i)*.2s)}
+.route li::before{content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;border:2px solid var(--accent);background:var(--bg);transition:background .4s calc(var(--i)*.2s),box-shadow .4s calc(var(--i)*.2s)}
+.route:not(.pre) li::before{background:var(--accent);box-shadow:0 0 12px var(--accent)}
+.route.pre li{opacity:.4}
+@media (max-width:760px){
+  .route{grid-template-columns:minmax(0,1fr);gap:0}
+  .route .line{left:7px;right:auto;top:8px;bottom:8px;width:2px;height:auto;transform-origin:50% 0}
+  .route.pre .line{transform:scaleY(0)}
+  .route .ship{display:none}
+  .route li{padding:0 0 24px 40px}
+  .route li::before{top:2px}
+  .route li:last-child{padding-bottom:0}
+}
+
+/* flight log (experience) */
+.log{position:relative;display:grid;gap:18px;padding-left:34px}
+.log::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--accent),var(--accent-2) 60%,transparent)}
+.log>li{position:relative;padding:24px 26px;display:grid;gap:6px}
+.log>li::after{content:"";position:absolute;left:-34px;top:30px;width:16px;height:16px;border-radius:50%;border:2px solid var(--accent);background:var(--bg);z-index:2}
+.log>li.now::after{background:var(--accent);animation:ping 2.4s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(111,211,255,.6)}70%,100%{box-shadow:0 0 0 12px rgba(111,211,255,0)}}
+.log .when{display:flex;align-items:center;gap:10px;color:var(--accent)}
+.log .badge{padding:2px 9px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font:600 .62rem var(--mono);letter-spacing:.1em}
+.log h3{font-size:1.35rem;font-weight:600;line-height:1.2}
+.log .org{color:var(--fg-2);font-size:.95rem}
+.log p.d{color:var(--fg-2);max-width:46rem;margin-top:6px}
+.log .chips{margin-top:10px}
+
+/* education / community */
+.cgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cgrid.tri{grid-template-columns:repeat(3,minmax(0,1fr))}
+.cbox{display:flex;flex-direction:column;gap:12px;padding:26px;min-width:0}
+.cbox h3{font-size:1.4rem;font-weight:600;line-height:1.15}
+.cbox .sub{color:var(--accent);font-family:var(--display);font-weight:500;margin-top:-6px}
+.cbox p.d{color:var(--fg-2);font-size:.97rem}
+.cbox .ph{margin-top:auto;border:1px solid var(--line);border-radius:12px;aspect-ratio:16/10}
+@media (max-width:980px){.cgrid,.cgrid.tri{grid-template-columns:minmax(0,1fr)}}
+.tight{margin-top:18px}
+.statement{margin-top:clamp(32px,5vw,56px);padding:clamp(24px,4vw,40px)}
+.statement p.t{font:500 clamp(1.1rem,2.1vw,1.45rem)/1.5 var(--display);max-width:54rem}
+.statement p.t b{color:var(--accent);font-weight:600}
+.statement .mono{display:block;margin-bottom:12px;color:var(--accent)}
+
+/* contact */
+.contact{padding-block:clamp(56px,8vw,104px) clamp(48px,6vw,80px)}
+.contact-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,26rem);gap:clamp(24px,5vw,64px);padding:clamp(24px,4vw,48px);align-items:start}
+.contact h2{font-size:clamp(2.2rem,5.4vw,4rem);font-weight:700;line-height:1;letter-spacing:-.02em;margin:12px 0 16px}
+.contact .lede{animation:none;margin-top:0;margin-bottom:22px}
+.facts{display:grid;gap:10px;margin-bottom:24px}
+.fact{display:flex;align-items:center;gap:14px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--glass);font-size:.95rem;min-width:0}
+.fact .mono{flex:none;min-width:5.5rem}
+.fact span.v{min-width:0;overflow-wrap:anywhere}
+button.fact{width:100%;color:inherit;cursor:pointer;text-align:left;font:inherit;font-size:.95rem;transition:border-color .2s,background .2s}
+button.fact:hover{border-color:var(--accent);background:var(--glass-2)}
+button.fact .st{margin-left:auto;flex:none;font:500 .72rem var(--mono);color:var(--fg-2)}
+button.fact.copied .st{color:var(--ok)}
+form{display:grid;gap:12px}
+.google-form-box{display:grid;gap:12px;min-width:0}
+.form-invite{display:grid;justify-items:start;gap:14px;padding:24px;border:1px solid var(--line-2);border-radius:16px;background:radial-gradient(90% 100% at 100% 0%,rgba(111,211,255,.1),transparent 65%),var(--glass)}
+.form-invite h3{font:600 1.45rem var(--display)}
+.form-invite .hint{font-size:.86rem;color:var(--fg-2)}
+.form-invite .sign-in-note{font-size:.75rem}
+.google-form-box .hint{font-size:.8rem;color:var(--fg-2)}
+label{display:grid;gap:6px;font:400 .68rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--fg-2)}
+input,textarea{width:100%;padding:12px 14px;background:rgba(255,255,255,.035);border:1px solid var(--line-2);border-radius:12px;color:var(--fg);font:400 .98rem var(--body);letter-spacing:0;text-transform:none;transition:border-color .2s,box-shadow .2s}
+input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(111,211,255,.2)}
+textarea{min-height:110px;resize:vertical}
+.hint{font-size:.82rem;color:var(--fg-2)}
+@media (max-width:900px){.contact-card{grid-template-columns:minmax(0,1fr)}}
+
+footer{padding-block:28px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer p{font:400 .72rem var(--mono);letter-spacing:.08em;color:var(--fg-2);text-transform:uppercase}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv.pre{opacity:1;transform:none}
+  .route.pre .line{transform:none}
+  #intro{display:none!important}
+}
+</style>
 </head>
 <body>
-  <div class="intro-splash" aria-hidden="true"><div class="intro-name">Tharun Naredla</div></div>
-  <header><div class="wrap nav"><div class="brand">Tharun Naredla</div><nav class="navlinks" aria-label="Main navigation"><a href="#expertise">Expertise</a><a href="#work">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#community">Community</a><a href="#contact">Contact</a></nav></div></header>
-  <main>
-    <div class="wrap hero">
-      <div><div class="eyebrow">Product · Engineering · Innovation</div><h1>From <span>problem</span> to product.</h1><p class="lead">I’m a Product Manager at Keystone Robotix and Product &amp; Innovation Engineer with 8 years of product-development experience. I bring design thinking and engineering together to turn opportunities into working products—from user needs and product strategy through prototyping, integration, validation and manufacturing readiness.</p><div class="pills"><span class="pill">8 years · product development</span><span class="pill">Product strategy &amp; roadmap</span><span class="pill">Robotics &amp; hardware</span><span class="pill">3D printing</span><span class="pill">Consultant product designer</span><span class="pill">Startup mentor</span><span class="pill">Embedded systems &amp; IoT</span><span class="pill">AI-enabled products</span></div><a class="cta" href="#work">Explore selected work <span aria-hidden="true">↓</span></a></div>
-      <div class="portrait-frame"><img src="assets/portrait.jpg" alt="Portrait of Tharun Naredla"><div class="portrait-label">Product Manager · Product Builder</div></div>
+<div id="intro" aria-label="Intro animation">
+  <canvas id="jump"></canvas>
+  <div class="boot" id="boot" aria-live="polite"></div>
+  <div class="flash" id="flash"></div>
+  <button id="skip" type="button">Skip intro</button>
+</div>
+
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="progress" id="progress"></div>
+
+<div class="page">
+<header class="top">
+  <div class="wrap">
+    <div class="pill">
+      <a class="brand" href="#top" aria-label="Tharun Naredla, home"><b>TN</b><span>Tharun Naredla</span></a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#expertise">Expertise</a>
+        <a href="#work">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#community">Community</a>
+        <a href="#contact" class="keep">Contact</a>
+      </nav>
     </div>
-    <section id="expertise"><div class="wrap"><div class="section-head"><h2>What I bring</h2><p>A connected skill set for shaping, building and launching physical and smart products.</p></div><div class="grid">
-      <article class="card"><div class="number">01 / PRODUCT</div><h3>Strategy &amp; product leadership</h3><p>Product strategy, roadmaps, customer-centric development, requirements, product lifecycle management and cross-functional team leadership.</p><div class="tags"><span class="tag">0→1 development</span><span class="tag">Agile</span><span class="tag">Stakeholders</span><span class="tag">Product lifecycle</span></div></article>
-      <article class="card"><div class="number">02 / DESIGN</div><h3>Design &amp; engineering</h3><p>Concept-to-production mechanical and electromechanical design, system architecture, CAD, design verification, tolerance and BOM optimization.</p><div class="tags"><span class="tag">SolidWorks</span><span class="tag">Onshape</span><span class="tag">Fusion 360</span><span class="tag">DFM / DFA</span></div></article>
-      <article class="card"><div class="number">03 / PROTOTYPE</div><h3>Prototyping &amp; validation</h3><p>Rapid prototype development, iterative testing, risk analysis and product validation for complex integrated systems.</p><div class="tags"><span class="tag">FDM &amp; resin printing</span><span class="tag">DFMEA</span><span class="tag">Quality assurance</span><span class="tag">Testing</span></div></article>
-      <article class="card"><div class="number">04 / AUTOMATION</div><h3>Robotics &amp; mechatronics</h3><p>Robotic mechanisms and electromechanical systems integrating mechanical, electrical and embedded engineering.</p><div class="tags"><span class="tag">6-axis robotic arm</span><span class="tag">Agriculture rover</span><span class="tag">Motors &amp; actuators</span></div></article>
-      <article class="card"><div class="number">05 / CONNECTED</div><h3>Embedded systems &amp; IoT</h3><p>Connected hardware, embedded control and smart monitoring across sensors, actuators and wireless networks.</p><div class="tags"><span class="tag">ESP32 / Arduino</span><span class="tag">LoRa / RF</span><span class="tag">Hardware–software integration</span></div></article>
-      <article class="card"><div class="number">06 / DELIVERY</div><h3>Manufacturing readiness</h3><p>Manufacturing coordination, vendor management, technical documentation, cost and BOM optimization, and transition from prototype to production.</p><div class="tags"><span class="tag">BOM</span><span class="tag">Production readiness</span><span class="tag">Vendor coordination</span></div></article>
-    </div></div></section>
-    <section id="work"><div class="wrap"><div class="section-head"><h2>Selected product work</h2><p>Product and project examples featured in my profile. Open each product site to learn more.</p></div><div class="projects">
-      <article class="project"><div class="project-copy"><div class="number">AI · ROBOTICS · CONSUMER</div><h3>MoMe &amp; Buchuk</h3><p>Automatic food-cooking machine and robot product work across MoMe and Buchuk. My profile records related patent work for Buchuk and end-to-end development toward manufacturing readiness.</p><a class="textlink" href="https://letsmome.com/product/" target="_blank" rel="noopener noreferrer">Explore MoMe ↗</a></div><img src="assets/mome-cooking-machine.png" alt="MoMe automated cooking machine"></article>
-      <article class="project"><div class="project-copy"><div class="number">IOT · WATER MANAGEMENT</div><h3>Neerovel</h3><p>Water-level management and water-quality analysis concept, supported by a connected smart monitoring device.</p><a class="textlink" href="https://neerovel.in/" target="_blank" rel="noopener noreferrer">Explore Neerovel ↗</a></div><img src="assets/neerovel-water-monitor.png" alt="Neerovel connected tank-level monitoring device"></article>
-      <article class="project"><div class="project-copy"><div class="number">NEOGREENS · GROWING SYSTEMS</div><h3>NeoGreens plant &amp; equipment</h3><p>Plant setup and machinery maintenance, along with a Smart Rack for microgreens and a humidity-and-temperature control device.</p><a class="textlink" href="https://neogreens.com/" target="_blank" rel="noopener noreferrer">Visit NeoGreens ↗</a></div><img class="photo" src="assets/neogreens-machinery.jpg" alt="NeoGreens industrial plant and processing machinery"></article>
-      <article class="project"><div class="project-copy"><div class="number">ROBOTICS · AUTOMATION</div><h3>Machines &amp; mechanisms</h3><p>6-axis robotic arm, agriculture rover, smart dispensing and automated cooking systems—spanning mechanisms, controls and integration.</p><div class="tags"><span class="tag">Mechanism development</span><span class="tag">Embedded control</span></div></div><div class="project-placeholder" aria-hidden="true"><span>DESIGN<br>→<br>BUILD<br>→<br>VALIDATE</span></div></article>
-      <article class="project"><div class="project-copy"><div class="number">CLOUD · RECIPES</div><h3>Qzene</h3><p>Cloud platform for recipes, bringing cooking content and recipe discovery into one connected experience.</p><a class="textlink" href="https://www.qzene.com/" target="_blank" rel="noopener noreferrer">Visit Qzene ↗</a></div><div class="project-placeholder" aria-hidden="true"><span>QZENE<br>RECIPES<br>CLOUD</span></div></article>
-      <article class="project"><div class="project-copy"><div class="number">MECHANICAL DESIGN · AQUACULTURE</div><h3>Barathi Aqua gearbox</h3><p>Designed an aquaculture gearbox for Barathi Aqua, translating an application need into a mechanical product design.</p></div><img class="photo" src="assets/aquaculture-gearbox-detail.jpg" alt="Machined gearbox housing detail for the Barathi Aqua aquaculture design"></article>
-      <article class="project wide"><img class="banner" src="assets/simmr-smart-cooktop.png" alt="Simmr semi-automatic cooking guide appliance"><div class="project-copy"><div><div class="number">SEMI-AUTOMATIC COOKING · GUIDED RECIPES</div><h3>Simmr cooking guide appliance</h3><p>Semi-automatic cooking guide appliance designed to help bring guided cooking into the home.</p></div><a class="textlink" href="https://getsimmr.com/" target="_blank" rel="noopener noreferrer">Visit Simmr ↗</a></div></article>
-    </div></div></section>
-    <section id="approach"><div class="wrap"><div class="section-head"><h2>How I develop products</h2><p>An end-to-end path that connects user needs to manufacturing readiness.</p></div><div class="flow"><div class="step">THINK</div><div class="arrow">→</div><div class="step">DEFINE</div><div class="arrow">→</div><div class="step">DESIGN</div><div class="arrow">→</div><div class="step">PROTOTYPE</div><div class="step">INTEGRATE</div><div class="arrow">→</div><div class="step">TEST</div><div class="arrow">→</div><div class="step">MANUFACTURE</div></div></div></section>
-    <section id="experience"><div class="wrap"><div class="section-head"><h2>Experience</h2><p>Product management and engineering across robotics, consumer products and electromechanical systems.</p></div><div class="timeline">
-      <article class="role"><div class="role-date">Apr 2026 — Present</div><div><h3>Product Manager</h3><div class="company">Keystone Robotix · Hyderabad, India</div><p>Product strategy and roadmaps, end-to-end product development, cross-functional leadership, robotics and hardware systems.</p><ul><li>Technical product management</li><li>Product design &amp; engineering</li><li>Prototype development &amp; testing</li><li>Lifecycle and manufacturing coordination</li><li>Vendor and stakeholder management</li><li>Innovation, QA and validation</li><li>Cost and BOM optimization</li></ul></div></article>
-      <article class="role"><div class="role-date">Aug 2024 — Apr 2026</div><div><h3>Senior Product Design Engineer</h3><div class="company">Keystone Robotix · Hyderabad, India</div><p>Led development of MoMe, an AI-powered automated cooking machine, from concept toward manufacturing readiness. Owned 0→1 development of an integrated electromechanical product, coordinated mechanical, electrical and embedded teams, accelerated prototype iterations, and conducted DFMEA and system validation.</p></div></article>
-      <article class="role"><div class="role-date">Sep 2024 — Present</div><div><h3>Product Manager</h3><div class="company">NeoGreens · Hyderabad, India</div><p>Product management experience in a connected growing-systems and microgreens context.</p></div></article>
-      <article class="role"><div class="role-date">May 2019 — Sep 2024</div><div><h3>Product Development Engineer → Senior Product Design Engineer</h3><div class="company">Quanint Techsoft / Quainnt Techsoft Pvt. Ltd. · Hyderabad, India</div><p>Progressed from product development into senior product design engineering, becoming a shareholder after six months. Led mechanical design from conceptual CAD through production-ready documentation, including design verification, FMEA, prototyping, BOMs and electromechanical assemblies.</p></div></article>
-      <article class="role"><div class="role-date">May 2019 — Aug 2024</div><div><h3>Product Designer</h3><div class="company">Buchuk · Part-time</div><p>Product design, product development and prototyping.</p></div></article>
-      <article class="role"><div class="role-date">May — Jun 2018</div><div><h3>Project Intern</h3><div class="company">3F Industries Ltd. · Tadepalligudem, India</div><p>Production line, power generation plant and manufacturing processes.</p></div></article>
-      <article class="role"><div class="role-date">May — Jul 2017</div><div><h3>Intern</h3><div class="company">South Central Railway · Vijayawada, India</div><p>Wheel shop exposure: non-destructive testing for wheels and axles, bearing inspection, technical drawing and manufacturing processes.</p></div></article>
-    </div></div></section>
-    <section id="education"><div class="wrap"><div class="section-head"><h2>Education &amp; early engineering</h2><p>Academic foundations, hands-on robotics and early product-building experience.</p></div><div class="grid education-grid">
-      <article class="card"><div class="number">POSTGRADUATE</div><h3>M.Tech · Design Engineering</h3><p>BITS Pilani</p></article>
-      <article class="card"><div class="number">UNDERGRADUATE</div><h3>B.Tech · Mechanical Engineering</h3><p>Sri Vasavi Engineering College</p></article>
-      <article class="card"><div class="number">ROBOTICS · LEADERSHIP</div><h3>e-Yantra &amp; student leadership</h3><p>First-batch member of the e-Yantra robotics lab; trained three robotics batches and served as student coordinator for the technical fest.</p></article>
-      <article class="card"><img class="milestone-image" src="assets/electric-go-kart.jpg" alt="Electric go-kart project built during undergraduate studies"><div class="number">EARLY BUILDS</div><h3>Engineering projects</h3><p>Drone, fixed-wing airplane and electric go-kart; semi-trailer rear-wheel steering; smart-farm watering, paddy sowing and reptile-deterrent projects. Internship exposure at South Central Railway and FFF Industries.</p></article>
-    </div></div></section>
-    <section id="community"><div class="wrap"><div class="section-head"><h2>Mentorship, teaching &amp; consulting</h2><p>Sharing product and engineering experience with startups, students and partner teams.</p></div><div class="grid">
-      <article class="card community-card"><img class="milestone-image" src="assets/blue-shirt-hackathon.jpg" alt="Tharun in a blue shirt at the Intercollegiate Idea Hackathon"><div class="number">STARTUP MENTORSHIP</div><h3>Mentor, panelist &amp; hackathon juror</h3><p>Mentored six startups, including Techredi, Ecoemigoes, Agronoid and Intellibots, plus student startups at Geethanjali and RBVRR colleges. Served as a technical mentor at RBVRR, a panel member for Geethanjali startup events, and a jury member for an Idea Hackathon.</p></article>
-      <article class="card community-card"><img class="milestone-image" src="assets/wheat-shirt-presentation.jpg" alt="Tharun presenting at a college event in a wheat-colored shirt"><div class="number">EDUCATION · OUTREACH</div><h3>Guest lecturer &amp; robotics trainer</h3><p>Delivered guest lectures at Sreenidhi, St. Peter’s, Geethanjali, Vardhaman, Sri Vasavi Degree and Engineering colleges; collaborated with Karo Sambhav for college lectures.</p></article>
-      <article class="card community-card"><img class="milestone-image" src="assets/consulting-team.jpg" alt="Consulting team at a technology workspace"><div class="number">PRODUCT CONSULTING</div><h3>Consultant Product Designer</h3><p>Consulting engagements included six months at T-Works, along with product work for Deeploop Technologies and IntelliBot.</p></article>
-    </div></div></section>
-    <section><div class="wrap"><div class="position"><h3>Professional positioning</h3><p><b>Product Manager / Product &amp; Innovation Engineer</b> with 8 years of experience spanning product strategy, end-to-end electromechanical product development and manufacturing-focused design. A multidisciplinary product builder who can identify a problem, define the product, architect the system, prototype rapidly, integrate hardware and software, validate performance and move toward production.</p></div></div></section>
-    <section id="contact"><div class="wrap"><div class="contact"><div class="contact-grid"><div class="contact-copy"><div class="eyebrow">Let’s build something useful</div><h2>Connect with me</h2><p>Have a product challenge, collaboration idea or opportunity? Send me a note or connect on LinkedIn.</p><a class="social" href="https://www.linkedin.com/in/tharun-naredla" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div><div><form id="contact-form"><div class="form-grid"><div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div><div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="field full"><label for="subject">Subject</label><input id="subject" name="subject" required></div><div class="field full"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div></div><p class="form-note">Submit opens WhatsApp with your details and message prefilled. Review it and tap Send in WhatsApp.</p><button class="submit" type="submit">Send via WhatsApp</button></form></div></div></div></div></section>
-  </main>
-  <footer class="wrap"><span>© 2026 Tharun Naredla. All rights reserved.</span><span>Product &amp; Innovation Engineering</span></footer>
-  <script>
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      if (!contactForm.reportValidity()) return;
-      const formData = new FormData(contactForm);
-      const text = [
-        'Portfolio enquiry for Tharun Naredla',
-        `Name: ${formData.get('name')}`,
-        `Email: ${formData.get('email')}`,
-        `Subject: ${formData.get('subject')}`,
-        `Message: ${formData.get('message')}`
-      ].join('\n');
-      const whatsappUrl = new URL('https://api.whatsapp.com/send/');
-      whatsappUrl.searchParams.set('phone', '+919030805335');
-      whatsappUrl.searchParams.set('text', text);
-      whatsappUrl.searchParams.set('type', 'phone_number');
-      whatsappUrl.searchParams.set('app_absent', '0');
-      window.location.assign(whatsappUrl.toString());
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hello mono">Product · Engineering · Innovation</p>
+      <h1 aria-label="Tharun Naredla"><span class="nm">Tharun</span><span class="nm">Naredla</span></h1>
+      <p class="role"><strong>Product Manager</strong><span>Product &amp; Innovation Engineer</span></p>
+      <p class="lede">From problem to product. I’m a Product Manager at Keystone Robotix and Product &amp; Innovation Engineer with 8 years of product-development experience. I bring design thinking and engineering together to turn opportunities into working products, from user needs and product strategy through prototyping, integration, validation and manufacturing readiness.</p>
+      <div class="cta">
+        <a class="btn primary" href="#work">Explore selected work ↓</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+      <div class="tags">
+        <a class="tag" href="#experience">8 years · product development</a>
+        <a class="tag" href="#expertise">Product strategy &amp; roadmap</a>
+        <a class="tag" href="#expertise">Robotics &amp; hardware</a>
+        <a class="tag" href="#expertise">3D printing</a>
+        <a class="tag" href="#community">Consultant product designer</a>
+        <a class="tag" href="#community">Startup mentor</a>
+        <a class="tag" href="#expertise">Embedded systems &amp; IoT</a>
+        <a class="tag" href="#expertise">AI-enabled products</a>
+      </div>
+    </div>
+    <div class="orb">
+      <div class="portrait"><span>TN</span><img src="assets/portrait.jpg" alt="Portrait of Tharun Naredla"></div>
+      <span class="chip c1"><b>8</b> years building</span>
+      <span class="chip c2">Robotics · IoT</span>
+      <span class="chip c3">Keystone Robotix</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="expertise">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono">Product Manager · Product Builder</p>
+      <h2>What I bring</h2>
+      <p>A connected skill set for shaping, building and launching physical and smart products.</p>
+    </div>
+    <div class="acc" id="acc">
+      <article class="glass acc-item open rv">
+        <button class="acc-btn" type="button" aria-expanded="true" aria-controls="p1" id="b1"><h3>Strategy &amp; product leadership</h3><span class="mono">Product</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <div class="acc-p" id="p1" role="region" aria-labelledby="b1"><div><div class="acc-in"><p>Product strategy, roadmaps, customer-centric development, requirements, product lifecycle management and cross-functional team leadership.</p><ul class="chips"><li>0→1 development</li><li>Agile</li><li>Stakeholders</li><li>Product lifecycle</li></ul></div></div></div>
+      </article>
+      <article class="glass acc-item rv">
+        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p2" id="b2"><h3>Design &amp; engineering</h3><span class="mono">Design</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <div class="acc-p" id="p2" role="region" aria-labelledby="b2"><div><div class="acc-in"><p>Concept-to-production mechanical and electromechanical design, system architecture, CAD, design verification, tolerance and BOM optimization.</p><ul class="chips"><li>SolidWorks</li><li>Onshape</li><li>Fusion 360</li><li>DFM / DFA</li></ul></div></div></div>
+      </article>
+      <article class="glass acc-item rv">
+        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p3" id="b3"><h3>Prototyping &amp; validation</h3><span class="mono">Prototype</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <div class="acc-p" id="p3" role="region" aria-labelledby="b3"><div><div class="acc-in"><p>Rapid prototype development, iterative testing, risk analysis and product validation for complex integrated systems.</p><ul class="chips"><li>FDM &amp; resin printing</li><li>DFMEA</li><li>Quality assurance</li><li>Testing</li></ul></div></div></div>
+      </article>
+      <article class="glass acc-item rv">
+        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p4" id="b4"><h3>Robotics &amp; mechatronics</h3><span class="mono">Automation</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <div class="acc-p" id="p4" role="region" aria-labelledby="b4"><div><div class="acc-in"><p>Robotic mechanisms and electromechanical systems integrating mechanical, electrical and embedded engineering.</p><ul class="chips"><li>6-axis robotic arm</li><li>Agriculture rover</li><li>Motors &amp; actuators</li></ul></div></div></div>
+      </article>
+      <article class="glass acc-item rv">
+        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p5" id="b5"><h3>Embedded systems &amp; IoT</h3><span class="mono">Connected</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <div class="acc-p" id="p5" role="region" aria-labelledby="b5"><div><div class="acc-in"><p>Connected hardware, embedded control and smart monitoring across sensors, actuators and wireless networks.</p><ul class="chips"><li>ESP32 / Arduino</li><li>LoRa / RF</li><li>Hardware–software integration</li></ul></div></div></div>
+      </article>
+      <article class="glass acc-item rv">
+        <button class="acc-btn" type="button" aria-expanded="false" aria-controls="p6" id="b6"><h3>Manufacturing readiness</h3><span class="mono">Delivery</span><span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <div class="acc-p" id="p6" role="region" aria-labelledby="b6"><div><div class="acc-in"><p>Manufacturing coordination, vendor management, technical documentation, cost and BOM optimization, and transition from prototype to production.</p><ul class="chips"><li>BOM</li><li>Production readiness</li><li>Vendor coordination</li></ul></div></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono">Selected work</p>
+      <h2>Selected product work</h2>
+      <p>Product and project examples featured in my profile. Open each product site to learn more.</p>
+    </div>
+    <div class="pgrid">
+      <article class="glass proj feat rv">
+        <figure class="ph" data-cap="Fig. MoMe automated cooking machine"><img src="assets/mome-cooking-machine.png" alt="MoMe automated cooking machine" loading="lazy"></figure>
+        <div class="body"><p class="mono">AI · Robotics · Consumer</p><h3>MoMe &amp; Buchuk</h3><p class="d">Automatic food-cooking machine and robot product work across MoMe and Buchuk. My profile records related patent work for Buchuk and end-to-end development toward manufacturing readiness.</p><a class="link" href="https://letsmome.com/product/" target="_blank" rel="noopener">Explore MoMe ↗</a></div>
+      </article>
+      <article class="glass proj rv">
+        <figure class="ph" data-cap="Fig. Neerovel tank-level monitor"><img src="assets/neerovel-water-monitor.png" alt="Neerovel connected tank-level monitoring device" loading="lazy"></figure>
+        <div class="body"><p class="mono">IoT · Water management</p><h3>Neerovel</h3><p class="d">Water-level management and water-quality analysis concept, supported by a connected smart monitoring device.</p><a class="link" href="https://neerovel.in/" target="_blank" rel="noopener">Explore Neerovel ↗</a></div>
+      </article>
+      <article class="glass proj rv">
+        <figure class="ph" data-cap="Fig. NeoGreens processing machinery"><img src="assets/neogreens-machinery.jpg" alt="NeoGreens industrial plant and processing machinery" loading="lazy"></figure>
+        <div class="body"><p class="mono">NeoGreens · Growing systems</p><h3>NeoGreens plant &amp; equipment</h3><p class="d">Plant setup and machinery maintenance, along with a Smart Rack for microgreens and a humidity-and-temperature control device.</p><a class="link" href="https://neogreens.com/" target="_blank" rel="noopener">Visit NeoGreens ↗</a></div>
+      </article>
+      <article class="glass proj rv">
+        <figure class="ph" data-cap="Fig. Design to build to validate"><div class="mark">DESIGN<s>↓</s><i>BUILD</i><s>↓</s>VALIDATE</div></figure>
+        <div class="body"><p class="mono">Robotics · Automation</p><h3>Machines &amp; mechanisms</h3><p class="d">6-axis robotic arm, agriculture rover, smart dispensing and automated cooking systems, spanning mechanisms, controls and integration.</p><ul class="chips"><li>Mechanism development</li><li>Embedded control</li></ul></div>
+      </article>
+      <article class="glass proj rv">
+        <figure class="ph" data-cap="Fig. Qzene platform"><div class="mark">QZENE<s>·</s><i>RECIPES</i><s>·</s>CLOUD</div></figure>
+        <div class="body"><p class="mono">Cloud · Recipes</p><h3>Qzene</h3><p class="d">Cloud platform for recipes, bringing cooking content and recipe discovery into one connected experience.</p><a class="link" href="https://www.qzene.com/" target="_blank" rel="noopener">Visit Qzene ↗</a></div>
+      </article>
+      <article class="glass proj rv">
+        <figure class="ph" data-cap="Fig. Gearbox housing detail"><img src="assets/aquaculture-gearbox-detail.jpg" alt="Machined gearbox housing detail for the Barathi Aqua aquaculture design" loading="lazy"></figure>
+        <div class="body"><p class="mono">Mechanical design · Aquaculture</p><h3>Barathi Aqua gearbox</h3><p class="d">Designed an aquaculture gearbox for Barathi Aqua, translating an application need into a mechanical product design.</p></div>
+      </article>
+      <article class="glass proj rv">
+        <figure class="ph" data-cap="Fig. Simmr cooking guide appliance"><img src="assets/simmr-smart-cooktop.png" alt="Simmr semi-automatic cooking guide appliance" loading="lazy"></figure>
+        <div class="body"><p class="mono">Semi-automatic cooking · Guided recipes</p><h3>Simmr cooking guide appliance</h3><p class="d">Semi-automatic cooking guide appliance designed to help bring guided cooking into the home.</p><a class="link" href="https://getsimmr.com/" target="_blank" rel="noopener">Visit Simmr ↗</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono">Process</p>
+      <h2>How I develop products</h2>
+      <p>An end-to-end path that connects user needs to manufacturing readiness.</p>
+    </div>
+    <ol class="route rv" id="route">
+      <span class="line" aria-hidden="true"></span><span class="ship" aria-hidden="true"></span>
+      <li style="--i:0">Think</li>
+      <li style="--i:1">Define</li>
+      <li style="--i:2">Design</li>
+      <li style="--i:3">Prototype</li>
+      <li style="--i:4">Integrate</li>
+      <li style="--i:5">Test</li>
+      <li style="--i:6">Manufacture</li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono">Experience</p>
+      <h2>Experience</h2>
+      <p>Product management and engineering across robotics, consumer products and electromechanical systems.</p>
+    </div>
+    <ol class="log">
+      <li class="glass now rv"><p class="mono when">Apr 2026 — Present <span class="badge">CURRENT</span></p><h3>Product Manager</h3><p class="org">Keystone Robotix · Hyderabad, India</p><p class="d">Product strategy and roadmaps, end-to-end product development, cross-functional leadership, robotics and hardware systems.</p><ul class="chips"><li>Technical product management</li><li>Product design &amp; engineering</li><li>Prototype development &amp; testing</li><li>Lifecycle and manufacturing coordination</li><li>Vendor and stakeholder management</li><li>Innovation, QA and validation</li><li>Cost and BOM optimization</li></ul></li>
+      <li class="glass rv"><p class="mono when">Aug 2024 — Apr 2026</p><h3>Senior Product Design Engineer</h3><p class="org">Keystone Robotix · Hyderabad, India</p><p class="d">Led development of MoMe, an AI-powered automated cooking machine, from concept toward manufacturing readiness. Owned 0→1 development of an integrated electromechanical product, coordinated mechanical, electrical and embedded teams, accelerated prototype iterations, and conducted DFMEA and system validation.</p></li>
+      <li class="glass now rv"><p class="mono when">Sep 2024 — Present <span class="badge">CURRENT</span></p><h3>Product Manager</h3><p class="org">NeoGreens · Hyderabad, India</p><p class="d">Product management experience in a connected growing-systems and microgreens context.</p></li>
+      <li class="glass rv"><p class="mono when">May 2019 — Sep 2024</p><h3>Product Development Engineer → Senior Product Design Engineer</h3><p class="org">Quanint Techsoft Pvt. Ltd. · Hyderabad, India</p><p class="d">Progressed from product development into senior product design engineering, becoming a shareholder after six months. Led mechanical design from conceptual CAD through production-ready documentation, including design verification, FMEA, prototyping, BOMs and electromechanical assemblies.</p></li>
+      <li class="glass rv"><p class="mono when">May 2019 — Aug 2024</p><h3>Product Designer</h3><p class="org">Buchuk · Part-time</p><p class="d">Product design, product development and prototyping.</p></li>
+      <li class="glass rv"><p class="mono when">May — Jun 2018</p><h3>Project Intern</h3><p class="org">3F Industries Ltd. · Tadepalligudem, India</p><p class="d">Production line, power generation plant and manufacturing processes.</p></li>
+      <li class="glass rv"><p class="mono when">May — Jul 2017</p><h3>Intern</h3><p class="org">South Central Railway · Vijayawada, India</p><p class="d">Wheel shop exposure: non-destructive testing for wheels and axles, bearing inspection, technical drawing and manufacturing processes.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="education">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono">Education</p>
+      <h2>Education &amp; early engineering</h2>
+      <p>Academic foundations, hands-on robotics and early product-building experience.</p>
+    </div>
+    <div class="cgrid">
+      <article class="glass cbox rv"><p class="mono">Postgraduate</p><h3>M.Tech · Design Engineering</h3><p class="sub">BITS Pilani</p></article>
+      <article class="glass cbox rv"><p class="mono">Undergraduate</p><h3>B.Tech · Mechanical Engineering</h3><p class="sub">Sri Vasavi Engineering College</p></article>
+      <article class="glass cbox rv"><p class="mono">Robotics · Leadership</p><h3>e-Yantra &amp; student leadership</h3><p class="d">First-batch member of the e-Yantra robotics lab; trained three robotics batches and served as student coordinator for the technical fest.</p><figure class="ph" data-cap="Fig. Electric go-kart, undergraduate project"><img src="assets/electric-go-kart.jpg" alt="Electric go-kart project built during undergraduate studies" loading="lazy"></figure></article>
+      <article class="glass cbox rv"><p class="mono">Early builds</p><h3>Engineering projects</h3><p class="d">Drone, fixed-wing airplane and electric go-kart; semi-trailer rear-wheel steering; smart-farm watering, paddy sowing and reptile-deterrent projects. Internship exposure at South Central Railway and FFF Industries.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="community">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono">Community</p>
+      <h2>Mentorship, teaching &amp; consulting</h2>
+      <p>Sharing product and engineering experience with startups, students and partner teams.</p>
+    </div>
+    <div class="cgrid tri">
+      <article class="glass cbox rv"><p class="mono">Startup mentorship</p><h3>Mentor, panelist &amp; hackathon juror</h3><p class="d">Mentored six startups, including Techredi, Ecoemigoes, Agronoid and Intellibots, plus student startups at Geethanjali and RBVRR colleges. Served as a technical mentor at RBVRR, a panel member for Geethanjali startup events, and a jury member for an Idea Hackathon.</p><figure class="ph" data-cap="Fig. Intercollegiate Idea Hackathon"><img src="assets/blue-shirt-hackathon.jpg" alt="Tharun in a blue shirt at the Intercollegiate Idea Hackathon" loading="lazy"></figure></article>
+      <article class="glass cbox rv"><p class="mono">Education · Outreach</p><h3>Guest lecturer &amp; robotics trainer</h3><p class="d">Delivered guest lectures at Sreenidhi, St. Peter’s, Geethanjali, Vardhaman, Sri Vasavi Degree and Engineering colleges; collaborated with Karo Sambhav for college lectures.</p><figure class="ph" data-cap="Fig. Presenting at a college event"><img src="assets/wheat-shirt-presentation.jpg" alt="Tharun presenting at a college event in a wheat-colored shirt" loading="lazy"></figure></article>
+      <article class="glass cbox rv"><p class="mono">Product consulting</p><h3>Consultant Product Designer</h3><p class="d">Consulting engagements included six months at T-Works, along with product work for Deeploop Technologies and IntelliBot.</p><figure class="ph" data-cap="Fig. Consulting team workspace"><img src="assets/consulting-team.jpg" alt="Consulting team at a technology workspace" loading="lazy"></figure></article>
+    </div>
+    <div class="glass statement rv">
+      <span class="mono">Professional positioning</span>
+      <p class="t"><b>Product Manager / Product &amp; Innovation Engineer</b> with 8 years of experience spanning product strategy, end-to-end electromechanical product development and manufacturing-focused design. A multidisciplinary product builder who can identify a problem, define the product, architect the system, prototype rapidly, integrate hardware and software, validate performance and move toward production.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="glass contact-card rv">
+      <div>
+        <p class="mono" style="color:var(--accent)">Let’s build something useful</p>
+        <h2>Connect with me</h2>
+        <p class="lede">Have a product challenge, collaboration idea or opportunity? Send me a note or connect on LinkedIn.</p>
+        <div class="facts">
+          <button class="fact" type="button" id="copyLi" data-copy="https://www.linkedin.com/in/tharun-naredla"><span class="mono">LinkedIn</span><span class="v">linkedin.com/in/tharun-naredla</span><span class="st" id="liSt">Click to copy</span></button>
+          <div class="fact"><span class="mono">Location</span><span class="v">Hyderabad, India</span></div>
+        </div>
+        <a class="btn primary" href="https://www.linkedin.com/in/tharun-naredla" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+      </div>
+      <div class="google-form-box">
+        <div class="form-invite">
+          <span class="mono">CONTACT FORM · GOOGLE FORMS</span>
+          <h3>Share your details</h3>
+          <p class="hint">Use the linked form to send your name, email, address, phone number (optional), and comments. Responses are collected in the Google Form.</p>
+          <a class="btn primary" href="https://forms.gle/rsoyExcFgbzLGVBv9" target="_blank" rel="noopener noreferrer">Open contact form ↗</a>
+          <p class="hint sign-in-note">Google sign-in is required by the form owner to submit a response.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><p>© 2026 Tharun Naredla. All rights reserved.</p><p>Product &amp; Innovation Engineering</p></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+  /* ---------- hyperspace intro ---------- */
+  var intro = document.getElementById('intro');
+  function endIntro(){
+    if (!intro || intro.classList.contains('out')) return;
+    intro.classList.add('out');
+    try { sessionStorage.setItem('tn-intro','1'); } catch(e){}
+    setTimeout(function(){ root.classList.remove('intro-on'); }, 800);
+  }
+  if (root.classList.contains('intro-on')){
+    var cv = document.getElementById('jump'), ctx = cv.getContext('2d'), flash = document.getElementById('flash');
+    var W, H, stars = [], N = 320, t0 = performance.now(), over = false;
+    function size(){ W = cv.width = innerWidth*dpr; H = cv.height = innerHeight*dpr; }
+    size(); addEventListener('resize', size);
+    for (var i=0;i<N;i++) stars.push({x:(Math.random()-.5)*2, y:(Math.random()-.5)*2, z:Math.random()*.98+.02});
+    var lines = ['> initializing profile','> loading 8 years of product development','> calibrating robotics + hardware + AI','> route set: from problem to product'];
+    var boot = document.getElementById('boot');
+    lines.forEach(function(l,i){ setTimeout(function(){ if(over) return; var p=document.createElement('p'); p.textContent=l; boot.appendChild(p); }, 350 + i*520); });
+    setTimeout(function(){ if(over) return; var p=document.createElement('p'); p.className='ok'; p.textContent='✓ ready. engaging jump'; boot.appendChild(p); }, 350 + lines.length*520);
+    document.getElementById('skip').addEventListener('click', function(){ over = true; endIntro(); });
+    var JUMP_AT = 2900, END_AT = 3900;
+    (function frame(now){
+      if (over) return;
+      var t = now - t0, cx = W/2, cy = H/2;
+      var k = t < JUMP_AT ? 0 : Math.min(1,(t-JUMP_AT)/(END_AT-JUMP_AT));
+      var v = .0035 + Math.pow(k,2.2)*.11;
+      ctx.fillStyle = 'rgba(0,0,0,' + (k>0 ? .28 : .5) + ')';
+      ctx.fillRect(0,0,W,H);
+      var sc = Math.max(W,H)*.55;
+      for (var i=0;i<N;i++){
+        var s = stars[i], z0 = s.z + v*2.2;
+        var x1 = cx + s.x/z0*sc*.5, y1 = cy + s.y/z0*sc*.5;
+        s.z -= v;
+        if (s.z <= .02){ s.z = 1; s.x = (Math.random()-.5)*2; s.y = (Math.random()-.5)*2; continue; }
+        var x2 = cx + s.x/s.z*sc*.5, y2 = cy + s.y/s.z*sc*.5;
+        var a = Math.min(1,(1-s.z)*1.4+.15);
+        ctx.strokeStyle = 'rgba(' + (170+ (1-s.z)*80|0) + ',' + (215+(1-s.z)*40|0) + ',255,' + a + ')';
+        ctx.lineWidth = (1 + (1-s.z)*1.8)*dpr;
+        ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+      }
+      flash.style.opacity = k > .78 ? String((k-.78)/.22) : '0';
+      if (t >= END_AT){ over = true; endIntro(); return; }
+      requestAnimationFrame(frame);
+    })(t0);
+  }
+
+  /* ---------- starfield ---------- */
+  var sky = document.getElementById('sky'), sctx = sky.getContext('2d'), SW, SH, sstars = [], px = 0, py = 0, tx = 0, ty = 0;
+  function skySize(){
+    SW = sky.width = innerWidth*dpr; SH = sky.height = innerHeight*dpr;
+    var n = Math.round(Math.min(220, innerWidth*innerHeight/7000));
+    sstars = [];
+    for (var i=0;i<n;i++) sstars.push({x:Math.random()*SW, y:Math.random()*SH, r:(Math.random()*1.3+.3)*dpr, l:Math.random()*.9+.1, p:Math.random()*6.28, s:Math.random()*1.6+.4, hue:Math.random()<.2?'154,140,255':'190,225,255'});
+  }
+  function drawSky(t){
+    sctx.clearRect(0,0,SW,SH);
+    var g = sctx.createRadialGradient(SW*.78,SH*.08,0,SW*.78,SH*.08,Math.max(SW,SH)*.7);
+    g.addColorStop(0,'rgba(60,90,200,.16)'); g.addColorStop(1,'rgba(4,5,12,0)');
+    sctx.fillStyle = g; sctx.fillRect(0,0,SW,SH);
+    var g2 = sctx.createRadialGradient(SW*.1,SH*.9,0,SW*.1,SH*.9,Math.max(SW,SH)*.6);
+    g2.addColorStop(0,'rgba(120,80,220,.10)'); g2.addColorStop(1,'rgba(4,5,12,0)');
+    sctx.fillStyle = g2; sctx.fillRect(0,0,SW,SH);
+    px += (tx-px)*.05; py += (ty-py)*.05;
+    var sy = (window.scrollY||0)*dpr;
+    for (var i=0;i<sstars.length;i++){
+      var s = sstars[i];
+      var x = ((s.x + px*s.l*30*dpr) % SW + SW) % SW;
+      var y = ((s.y - sy*s.l*.18 + py*s.l*30*dpr) % SH + SH) % SH;
+      var a = .35 + .65*(.5+.5*Math.sin(t*.001*s.s + s.p))*s.l;
+      sctx.fillStyle = 'rgba(' + s.hue + ',' + a.toFixed(3) + ')';
+      sctx.beginPath(); sctx.arc(x,y,s.r,0,6.283); sctx.fill();
+    }
+  }
+  skySize(); addEventListener('resize', skySize);
+  if (reduce){ drawSky(0); }
+  else {
+    addEventListener('pointermove', function(e){ tx = (e.clientX/innerWidth-.5); ty = (e.clientY/innerHeight-.5); }, {passive:true});
+    (function loop(t){ if (!document.hidden) drawSky(t); requestAnimationFrame(loop); })(0);
+  }
+
+  /* ---------- images: keep the framed placeholder when a file is missing ---------- */
+  document.querySelectorAll('.ph img, .portrait img').forEach(function(img){
+    function drop(){ img.remove(); }
+    img.addEventListener('error', drop);
+    if (img.complete && img.naturalWidth === 0) drop();
+  });
+
+  /* ---------- progress + active nav ---------- */
+  var bar = document.getElementById('progress'), ticking = false;
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - innerHeight;
+    bar.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, scrollY/h) : 0) + ')';
+    ticking = false;
+  }
+  addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
+  onScroll();
+  var links = {};
+  document.querySelectorAll('.nav a').forEach(function(a){ links[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window){
+    var navIO = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting && links[e.target.id]){
+          Object.keys(links).forEach(function(k){ links[k].removeAttribute('aria-current'); });
+          links[e.target.id].setAttribute('aria-current','true');
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    ['expertise','work','experience','education','community','contact'].forEach(function(id){
+      var el = document.getElementById(id); if (el) navIO.observe(el);
     });
-  </script>
+  }
+
+  /* ---------- reveal on scroll ---------- */
+  var rv = [].slice.call(document.querySelectorAll('.rv'));
+  rv.forEach(function(el){
+    var sib = el.parentElement ? [].indexOf.call(el.parentElement.children, el) : 0;
+    el.style.setProperty('--d', (Math.min(sib,5)*0.07).toFixed(2)+'s');
+  });
+  if (!reduce && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.remove('pre'); io.unobserve(e.target); } });
+    }, {threshold:.1, rootMargin:'0px 0px -6% 0px'});
+    rv.forEach(function(el){
+      if (el.getBoundingClientRect().top > innerHeight*.92) el.classList.add('pre');
+      io.observe(el);
+    });
+  }
+
+  /* ---------- accordion ---------- */
+  var items = [].slice.call(document.querySelectorAll('.acc-item'));
+  items.forEach(function(item){
+    var btn = item.querySelector('.acc-btn');
+    btn.addEventListener('click', function(){
+      var open = item.classList.contains('open');
+      items.forEach(function(o){ o.classList.remove('open'); o.querySelector('.acc-btn').setAttribute('aria-expanded','false'); });
+      if (!open){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+
+  /* ---------- cursor glow ---------- */
+  document.querySelectorAll('.glass').forEach(function(el){
+    el.addEventListener('pointermove', function(e){
+      var r = el.getBoundingClientRect();
+      el.style.setProperty('--mx', (e.clientX-r.left)+'px');
+      el.style.setProperty('--my', (e.clientY-r.top)+'px');
+    });
+  });
+
+  /* ---------- copy helpers ---------- */
+  function copyText(text, onOk, onFail){
+    if (navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(onOk, onFail); }
+    else onFail();
+  }
+  var li = document.getElementById('copyLi'), liSt = document.getElementById('liSt');
+  li.addEventListener('click', function(){
+    copyText(li.getAttribute('data-copy'), function(){
+      li.classList.add('copied'); liSt.textContent = 'Copied!';
+      setTimeout(function(){ li.classList.remove('copied'); liSt.textContent = 'Click to copy'; }, 1800);
+    }, function(){ liSt.textContent = 'Copy blocked, open the button below'; });
+  });
+
+
+})();
+</script>
 </body>
 </html>
